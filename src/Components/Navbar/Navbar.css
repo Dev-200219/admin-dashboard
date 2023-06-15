@@ -1,0 +1,74 @@
+.navbar {
+    background-color: white !important;
+    color: rebeccapurple !important;
+}
+
+.list-title {
+    font-size: 10px;
+    font-weight: bold;
+    color: #999;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    margin-left: 15px;
+}
+
+.MuiListItemIcon-root {
+    color: rebeccapurple !important;
+}
+
+.items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    cursor: pointer;
+    flex-wrap: wrap;
+}
+
+.item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.icon {
+    font-size: small;
+}
+
+.counter {
+    height: 15px;
+    width: 15px;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    right: -5px;
+}
+
+@media screen and (max-width : 600px){
+    .items {
+        display: none;
+    }
+
+    .icon {
+        font-size: large;
+        color: rebeccapurple !important;
+    }
+}
+
+@media screen and (min-width : 600px){
+    #basic-button {
+        display: none;
+    }
+
+    .MuiMenuItem-root {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
