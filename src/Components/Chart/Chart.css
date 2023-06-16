@@ -1,0 +1,19 @@
+.chart {
+    flex: 5;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-top: 1rem;
+    height: auto;
+    padding: 10px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    width: 90vw;
+}
+
+.area-chart-title {
+    font-size: 25px;
+    font-weight: bold;
+    color: gray;
+    margin: 10px;
+}
