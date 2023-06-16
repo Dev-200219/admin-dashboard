@@ -3,6 +3,7 @@ import Widgets from '../Widget/Widgets'
 import Featured from '../Featured/Featured'
 import Chart from '../Chart/Chart'
 import './Home.css'
+import List from '../List/List'
 
 function Home() {
   return (
@@ -12,6 +13,7 @@ function Home() {
         <Featured/>
         <Chart/>
       </div>
+      <List />
     </>
   )
 }

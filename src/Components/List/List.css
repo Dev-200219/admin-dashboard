@@ -1,0 +1,17 @@
+.list-container {
+    margin: 1rem 1rem 1rem 1rem;
+    padding: 10px;
+}
+
+.product-container {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.product-container > img {
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+    object-fit: fill;
+}
