@@ -3,7 +3,7 @@ import React from 'react'
 import { AreaChart, Area, XAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts';
 import './Chart.css'
 
-function Chart() {
+function Chart({title}) {
 
   const data = [
     { name: "January", Total: 1200 },
@@ -16,7 +16,7 @@ function Chart() {
 
   return (
     <Paper className='chart' elevation={3}>
-      <Typography gutterBottom variant='h5' className="title">Total Users in last 6 months</Typography>
+      <Typography gutterBottom variant='h5' className="title">{title}</Typography>
       <ResponsiveContainer height='100%' width='100%'>
         <AreaChart width={730} height={250} data={data}
           margin={{ top: 10, right: 30, left: 0, bottom: 0 }}>

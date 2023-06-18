@@ -11,7 +11,7 @@ function Home() {
       <Widgets/>
       <div className="charts-container">
         <Featured/>
-        <Chart/>
+        <Chart title="Total Users in last 6 months"/>
       </div>
       <List />
     </>
