@@ -62,6 +62,9 @@ function SingleWidget({ type }) {
                     }} />
                 )
             }
+        break;
+
+        default : 
     }
 
     return (

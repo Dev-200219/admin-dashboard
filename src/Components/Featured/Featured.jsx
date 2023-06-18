@@ -1,4 +1,4 @@
-import { CircularProgress, Paper, Typography } from '@mui/material'
+import { Paper, Typography } from '@mui/material'
 import React from 'react'
 import MoreVertIcon from '@mui/icons-material/MoreVert';
 import './Featured.css'

@@ -51,6 +51,10 @@
     font-size: small;
 }
 
+.MuiListItem-root:hover, .MuiToolbar-root > .MuiButtonBase-root:hover {
+    background-color: rgba(210, 182, 239, 0.244) !important;
+}
+
 @media screen and (max-width : 600px){
     .items {
         display: none;

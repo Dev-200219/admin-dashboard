@@ -20,6 +20,7 @@ import FormatListBulletedOutlinedIcon from '@mui/icons-material/FormatListBullet
 import DarkModeOutlinedIcon from '@mui/icons-material/DarkModeOutlined';
 import React, { useState } from 'react'
 import './Navbar.css'
+import { Link } from 'react-router-dom';
 
 function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
@@ -51,14 +52,16 @@ function Navbar() {
             <span className='list-title'>
                 MAIN
                 <List>
-                    <ListItem disablePadding>
-                        <ListItemButton>
-                            <ListItemIcon>
-                                <DashboardIcon />
-                            </ListItemIcon>
-                            <ListItemText primary={'Dashboard'} />
-                        </ListItemButton>
-                    </ListItem>
+                    <Link to='/home' style={{ textDecoration: 'none', color: 'inherit' }}>
+                        <ListItem disablePadding>
+                            <ListItemButton>
+                                <ListItemIcon>
+                                    <DashboardIcon />
+                                </ListItemIcon>
+                                <ListItemText primary={'Dashboard'} />
+                            </ListItemButton>
+                        </ListItem>
+                    </Link>
                 </List>
             </span>
             <Divider />
@@ -66,14 +69,16 @@ function Navbar() {
             <span className='list-title'>
                 LISTS
                 <List>
-                    <ListItem disablePadding>
-                        <ListItemButton>
-                            <ListItemIcon>
-                                <GroupIcon />
-                            </ListItemIcon>
-                            <ListItemText primary={'Users'} />
-                        </ListItemButton>
-                    </ListItem>
+                    <Link to='/users' style={{textDecoration : 'none', color : 'inherit'}}>
+                        <ListItem disablePadding>
+                            <ListItemButton>
+                                <ListItemIcon>
+                                    <GroupIcon />
+                                </ListItemIcon>
+                                <ListItemText primary={'Users'} />
+                            </ListItemButton>
+                        </ListItem>
+                    </Link>
                     <ListItem disablePadding>
                         <ListItemButton>
                             <ListItemIcon>
