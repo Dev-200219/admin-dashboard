@@ -69,7 +69,7 @@ function Navbar() {
             <span className='list-title'>
                 LISTS
                 <List>
-                    <Link to='/users' style={{textDecoration : 'none', color : 'inherit'}}>
+                    <Link to='/users' style={{ textDecoration: 'none', color: 'inherit' }}>
                         <ListItem disablePadding>
                             <ListItemButton>
                                 <ListItemIcon>
@@ -79,14 +79,19 @@ function Navbar() {
                             </ListItemButton>
                         </ListItem>
                     </Link>
-                    <ListItem disablePadding>
-                        <ListItemButton>
-                            <ListItemIcon>
-                                <StorefrontIcon />
-                            </ListItemIcon>
-                            <ListItemText primary={'Products'} />
-                        </ListItemButton>
-                    </ListItem>
+
+                    <Link to='/products' style={{ textDecoration: 'none', color: 'inherit' }}>
+                        <ListItem disablePadding>
+                            <ListItemButton>
+                                <ListItemIcon>
+                                    <StorefrontIcon />
+                                </ListItemIcon>
+                                <ListItemText primary={'Products'} />
+                            </ListItemButton>
+                        </ListItem>
+                    </Link>
+
+                    <Link to='/orders' style={{ textDecoration: 'none', color: 'inherit' }}>
                     <ListItem disablePadding>
                         <ListItemButton>
                             <ListItemIcon>
@@ -95,6 +100,8 @@ function Navbar() {
                             <ListItemText primary={'Orders'} />
                         </ListItemButton>
                     </ListItem>
+                    </Link>
+                    
                     <ListItem disablePadding>
                         <ListItemButton>
                             <ListItemIcon>

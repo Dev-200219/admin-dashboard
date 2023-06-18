@@ -1,8 +1,8 @@
 import Navbar from "./Components/Navbar/Navbar";
 import Home from "./Components/Home/Home";
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
-import Users from "./Components/Users/Users";
-import SingleUser from "./Components/SingleUser/SingleUser";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import DataTable from "./Components/DataTable/DataTable";
+import SingleItem from "./Components/SingleItem/SingleItem";
 
 function App() {
   return (
@@ -11,8 +11,12 @@ function App() {
         <Navbar />
         <Routes>
           <Route exact path='/home' element={<Home/>}/>
-          <Route exact path='/users' element={<Users/>}/>
-          <Route exact path='/user/:id' element={<SingleUser/>}/>
+          <Route exact path='/users' element={<DataTable type='users'/>}/>
+          <Route exact path='/users/:id' element={<SingleItem type='users'/>}/>
+          <Route exact path='/products' element={<DataTable type='products'/>}/>
+          <Route exact path='/products/:id' element={<SingleItem type='products'/>}/>
+          <Route exact path='/orders' element={<DataTable type='orders'/>}/>
+          <Route exact path='/orders/:id' element={<SingleItem type='orders'/>}/>
          </Routes>
       </Router>
     </>
