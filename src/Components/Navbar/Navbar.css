@@ -1,6 +1,7 @@
 .navbar {
     background-color: white !important;
     color: rebeccapurple !important;
+    cursor: pointer;
 }
 
 .list-title {
