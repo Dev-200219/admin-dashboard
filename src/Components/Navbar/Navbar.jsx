@@ -213,29 +213,29 @@ function Navbar() {
                     </Typography>
 
                     <div className="items">
-                        <div className="item">
+                        <div className="navbar-item">
                             <LanguageOutlinedIcon className="icon" />
                             English
                         </div>
-                        <div className="item">
+                        <div className="navbar-item">
                             <DarkModeOutlinedIcon className="icon" />
                         </div>
-                        <div className="item">
+                        <div className="navbar-item">
                             <FullscreenExitOutlinedIcon className="icon" />
                         </div>
-                        <div className="item">
+                        <div className="navbar-item">
                             <NotificationsNoneOutlinedIcon className="icon" />
                             <div className="counter">1</div>
                         </div>
-                        <div className="item">
+                        <div className="navbar-item">
                             <ChatBubbleOutlineOutlinedIcon className="icon" />
                             <div className="counter">2</div>
                         </div>
-                        <div className="item">
+                        <div className="navbar-item">
                             <FormatListBulletedOutlinedIcon className="icon" />
                         </div>
                         <div className="avatar">
-                            <Avatar className='icon' alt='some name' src='./2.jpg' />
+                            <Avatar className='icon' alt='some name' src='https://images.pexels.com/photos/733872/pexels-photo-733872.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260' />
                         </div>
                     </div>
 
@@ -246,7 +246,7 @@ function Navbar() {
                         aria-expanded={open ? 'true' : undefined}
                         onClick={handleClick}
                     >
-                        <Avatar alt='some name' src='./2.jpg' />
+                        <Avatar alt='some name' src="https://images.pexels.com/photos/733872/pexels-photo-733872.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260"/>
                     </Button>
 
                     <div className="mobile-menu">
@@ -259,22 +259,22 @@ function Navbar() {
                             }}
                         >
                             <MenuItem onClick={handleClose}>
-                                <div className="item">
+                                <div className="navbar-item">
                                     <LanguageOutlinedIcon className="icon" />
                                     English
                                 </div>
                             </MenuItem>
                             <MenuItem onClick={handleClose}>
-                                <div className="item">
+                                <div className="navbar-item">
                                     <DarkModeOutlinedIcon className="icon" />
                                 </div></MenuItem>
                             <MenuItem onClick={handleClose}>
-                                <div className="item">
+                                <div className="navbar-item">
                                     <NotificationsNoneOutlinedIcon className="icon" />
                                     <div className="counter">1</div>
                                 </div></MenuItem>
                             <MenuItem onClick={handleClose}>
-                                <div className="item">
+                                <div className="navbar-item">
                                     <ChatBubbleOutlineOutlinedIcon className="icon" />
                                     <div className="counter">2</div>
                                 </div></MenuItem>
