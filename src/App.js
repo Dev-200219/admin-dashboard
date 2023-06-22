@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-d
 import DataTable from "./Components/DataTable/DataTable";
 import SingleItem from "./Components/SingleItem/SingleItem";
 import NewPage from "./Components/NewPage/NewPage";
+import Calendar from "./Components/Calendar/Calendar";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
           <Route exact path='/' element={<Navigate to='/home'/>}/>
           <Route exact path='/home' element={<Home/>}/>
           <Route exact path='/users' element={<DataTable type='users'/>}/>
+          <Route exact path='/calendar' element={<Calendar/>}/>
           <Route exact path='/users/:id' element={<SingleItem type='users'/>}/>
           <Route exact path='/users/new' element={<NewPage type='users'/>}/>
           <Route exact path='/products' element={<DataTable type='products'/>}/>

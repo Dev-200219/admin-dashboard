@@ -1,0 +1,19 @@
+.calendar-container {
+    margin: 1rem;
+}
+
+.fc-event {
+    height: 3rem !important;
+}
+
+.fc .fc-timegrid-slot {
+    height: 3rem !important;
+}
+
+@media screen and (max-width : 600px){
+    .fc-header-toolbar {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+}

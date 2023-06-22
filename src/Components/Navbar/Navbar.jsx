@@ -3,6 +3,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 import DashboardIcon from '@mui/icons-material/Dashboard';
 import GroupIcon from '@mui/icons-material/Group';
 import StorefrontIcon from '@mui/icons-material/Storefront';
+import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
 import CreditCardOutlinedIcon from '@mui/icons-material/CreditCardOutlined';
 import LocalShippingIcon from '@mui/icons-material/LocalShipping';
 import AssessmentIcon from '@mui/icons-material/Assessment';
@@ -59,6 +60,16 @@ function Navbar() {
                                     <DashboardIcon />
                                 </ListItemIcon>
                                 <ListItemText primary={'Dashboard'} />
+                            </ListItemButton>
+                        </ListItem>
+                    </Link>
+                    <Link to='/calendar' style={{ textDecoration: 'none', color: 'inherit' }}>
+                        <ListItem disablePadding>
+                            <ListItemButton>
+                                <ListItemIcon>
+                                    <CalendarMonthIcon />
+                                </ListItemIcon>
+                                <ListItemText primary={'Calendar'} />
                             </ListItemButton>
                         </ListItem>
                     </Link>
